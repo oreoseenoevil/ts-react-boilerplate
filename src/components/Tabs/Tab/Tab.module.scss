@@ -1,0 +1,33 @@
+.tab {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--tab-border-color);
+  padding-bottom: var(--tab-padding);
+  width: var(--tab-width);
+  color: var(--tab-color);
+  transition-property: font-weight, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  cursor: pointer;
+
+  &.active {
+    color: var(--tab-active-color);
+    border-color: var(--tab-active-border-color);
+    font-weight: var(--tab-active-font-wight);
+
+    &:hover {
+      color: var(--tab-active-hover-color);
+    }
+  }
+
+  &:hover {
+    color: var(--tab-hover-color);
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    &:hover {
+      color: var(--tab-color);
+    }
+  }
+}

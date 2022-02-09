@@ -1,0 +1,32 @@
+.toggle_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+  font-size: 16px;
+  border: none;
+  transition-property: font-weight, background-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+
+  &:hover {
+    color: var(--grey-100);
+    background-color: var(--grey-5);
+    cursor: pointer;
+  }
+
+  width: var(--toggle-button-width);
+  padding: var(--toggle-button-padding);
+  height: var(--toggle-button-height);
+  font-weight: var(--toggle-button-inactive-font-weight);
+  background-color: var(--toggle-button-inactive-background);
+  gap: var(--toggle-button-gap);
+  color: var(--toggle-button-inactive-color);
+
+  &.active {
+    background-color: var(--toggle-button-active-background);
+    color: var(--toggle-button-active-color);
+    font-weight: var(--toggle-button-active-font-weight);
+    cursor: default;
+  }
+}

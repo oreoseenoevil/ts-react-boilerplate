@@ -1,0 +1,38 @@
+.list_item_container {
+  text-align: left;
+  color: var(--list-item-default-color);
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  background: var(--list-item-background-color);
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid var(--list-item-border-color);
+  box-sizing: border-box;
+  user-select: none;
+  transition: border-color 0.2s ease;
+
+  &.list_item_not_selected {
+    &:hover {
+      border: 1px solid var(--list-item-hover-border-color);
+    }
+  }
+
+  &.list_item_selected {
+    border: 1px solid var(--list-item-selected-border-color);
+    color: var(--list-item-selected-color);
+  }
+
+  .icon {
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 8px;
+  }
+}

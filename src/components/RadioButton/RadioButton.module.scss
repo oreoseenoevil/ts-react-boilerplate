@@ -1,0 +1,86 @@
+.radio_container {
+  display: inline-flex;
+  user-select: none;
+  align-items: center;
+
+  .radio {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .icon_container {
+    position: relative;
+    display: inline-flex;
+    box-sizing: border-box;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    transition-property: color, background-color;
+    transition-duration: 150ms;
+    background: var(--radio-button-background-color);
+    border: 1px solid var(--radio-button-border-color);
+  }
+
+  .label {
+    margin-left: 8px;
+  }
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--radio-button-circle-outer-color);
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle_inner {
+      background-color: var(--radio-button-circle-inner-color);
+      border-radius: 100%;
+      height: 6px;
+      width: 6px;
+    }
+  }
+
+  &:hover {
+    .icon_container {
+      background: var(--radio-button-hover-background-color);
+    }
+  }
+
+  &:active {
+    .icon_container {
+      background: var(--radio-button-active-background-color);
+    }
+  }
+
+  &:focus-within {
+    .icon_container {
+      box-shadow: 0px 0px 0px 2px #8cd4fd, inset 0px 0px 0px 1px #463a4d;
+    }
+  }
+
+  &.disabled {
+    --radio-button-circle-inner-color: var(--radio-button-disabled-circle-inner-color);
+    --radio-button-circle-outer-color: var(--radio-button-disabled-circle-outer-color);
+    --radio-button-border-color: var(--radio-button-disabled-border-color);
+
+    &:hover,
+    &:active {
+      .icon_container {
+        background: var(--radio-button-background-color);
+      }
+    }
+  }
+
+  &.error {
+    color: var(--radio-button-error-color);
+
+    --radio-button-circle-inner-color: var(--radio-button-error-circle-inner-color);
+    --radio-button-circle-outer-color: var(--radio-button-error-circle-outer-color);
+    --radio-button-border-color: var(--radio-button-error-border-color);
+  }
+}

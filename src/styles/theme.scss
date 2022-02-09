@@ -1,0 +1,305 @@
+:root {
+  --black: #000;
+  --white: #fff; // this is the same as grey-0
+  --text-100: #3f1d4b;
+
+  --purple-10: #fcf5ff;
+  --purple-20: #edccff;
+  --purple-30: #e499ff;
+  --purple-40: #d766ff;
+  --purple-50: #ca33ff;
+  --purple-60: #bd00ff;
+  --purple-70: #9700cc;
+  --purple-75: #8a00ba;
+  --purple-80: #710099;
+  --purple-90: #500076;
+  --purple-100: #250032;
+
+  --grey-0: #ffffff;
+  --grey-5: #f6f5f7;
+  --grey-6: #efefef;
+  --grey-7: #f3f0f5;
+  --grey-10: #f0ebf2;
+  --grey-20: #e0d8e5;
+  --grey-30: #c6bacc;
+  --grey-40: #aa9ab2;
+  --grey-50: #918299;
+  --grey-60: #786980;
+  --grey-70: #5f5166;
+  --grey-80: #463a4d;
+  --grey-90: #2e2533;
+  --grey-95: #201923;
+  --grey-100: #17121a;
+
+  --green-20: #cef2da;
+  --green-100: #179942;
+
+  --red-10: #ffeded;
+  --red-20: #ffd9d9;
+  --red-30: #ffb8b8;
+  --red-40: #ff9494;
+  --red-50: #ff7171;
+  --red-60: #ff4e4e;
+  --red-70: #cc3e3e;
+  --red-80: #992e2e;
+  --red-90: #661f1f;
+  --red-100: #320f0f;
+
+  --blue: #004de5;
+  --light-blue: #8cd4fd;
+
+  --data-blue: #0c5be8;
+  --data-blue-20: #0c5be833;
+  --data-blue-50: #0c5be880;
+  --data-orange: #e66700;
+  --data-orange-20: #e6670033;
+  --data-orange-30: #eb8533;
+  --data-orange-50: #e6670080;
+  --data-pink: #e70074;
+  --data-pink-50: #e7007480;
+  --data-teal: #00a299;
+  --data-teal-20: #00a29933;
+  --data-teal-50: #00a29980;
+  --data-purple: #7500ff;
+  --data-purple-50: #7500ff80;
+  --data-yellow: #fedc00;
+  --data-blue-sky: #2f90ff;
+
+  --text-10: #1d2c4b;
+  --text-50: #a27ab0;
+  --text-100: #3f1d4b;
+
+  --text-color: var(--text-100);
+
+  --slide-toggle-thumb-color: var(--white);
+  --slide-toggle-track-color: var(--grey-50);
+  --slide-toggle-ripple-color: var(--grey-100);
+  --slide-toggle-track-active-color: var(--purple-20);
+  --slide-toggle-focus-ripple-color: var(--purple-80);
+  --slide-toggle-thumb-active-color: var(--purple-80);
+
+  --stat-card-background-color: var(--white);
+  --stat-card-padding: 40px 32px;
+  --stat-card-width: 100%;
+  --stat-card-dot-width: 12px;
+  --stat-card-dot-height: 12px;
+  --stat-card-dot-color: var(--purple-50);
+  --stat-card-dot-margin: 0 4px 0 0;
+  --stat-card-dot-border-color: var(--white);
+  --stat-card-title-color: var(--text-50);
+  --stat-card-title-font-weight: 'normal';
+  --stat-card-title-wrap-margin: 0 0 8px 0;
+  --stat-card-content-color: var(--text-100);
+  --stat-card-arrow-height: 24px;
+  --stat-card-arrow-width: 24px;
+  --stat-card-arrow-wrap-margin: 0 0 0 4px;
+  --stat-card-subtitle-color: var(--text-50);
+  --stat-card-subtitle-font-weight: 'normal';
+  --stat-card-subtitle-margin: 4px 0 0 0;
+  --stat-card-active-background-color: var(--blue);
+  --stat-card-active-title-color: var(--grey-20);
+  --stat-card-active-subtitle-color: var(--grey-20);
+  --stat-card-active-content-color: var(--white);
+
+  --slider-navigation-color: var(--grey-6);
+
+  --tooltip-background: var(--grey-100);
+  --tooltip-text-color: var(--grey-5);
+  --tooltip-font-size: 14px;
+  --tooltip-line-height: 20px;
+  --tooltip-border: transparent;
+
+  --button-color: var(--grey-80);
+  --button-background: none;
+  --button-border: none;
+  --button-border-radius: 2px;
+  --button-padding: 3px 8px;
+  --button-large-padding: 6px 16px;
+  --button-xlarge-padding: 12px 24px;
+  --button-padding-with-icon: 3px 8px;
+  --button-font-weight: 500;
+  --button-line-height: 20px;
+  --button-text-font-size: 14px;
+  --button-large-line-height: 24px;
+  --button-xlarge-line-height: 24px;
+  --button-primary-basic-hover-background-color: rgba(0, 0, 0, 0.08);
+  --button-primary-basic-focus-background-color: var(--white);
+  --button-primary-basic-active-background-color: rgba(0, 0, 0, 0.12);
+  --button-primary-basic-disabled-color: var(--grey-40);
+  --button-primary-flat-background-color: var(--purple-60);
+  --button-primary-flat-color: var(--white);
+  --button-primary-flat-hover-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
+    var(--purple-60);
+  --button-primary-flat-focus-background-color: var(--purple-60);
+  --button-primary-flat-box-shadow: 0px 0px 0px 2px #8cd4fd;
+  --button-primary-flat-active-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    var(--purple-60);
+  --button-primary-flat-disabled-color: var(--grey-20);
+  --button-primary-stroked-color: var(--grey-80);
+  --button-primary-stroked-border-color: 1px solid #918299;
+  --button-primary-stroked-hover-border-color: 1px solid #918299;
+  --button-primary-stroked-focus-background-color: var(--white);
+  --button-primary-stroked-focus-box-shadow: 0px 0px 0px 2px #8cd4fd;
+  --button-primary-focus-box-shadow: 0px 0px 0px 2px #8cd4fd;
+  --button-primary-stroked-active-border-color: 1px solid #918299;
+  --button-primary-stroked-disabled-border-color: 1px solid #c6bacc;
+  --button-primary-stroked-disabled-color: var(--grey-30);
+  --button-secondary-basic-color: var(--purple-60);
+  --button-secondary-basic-hover-background-color: rgba(189, 0, 255, 0.08);
+  --button-secondary-basic-focus-background-color: var(--white);
+  --button-secondary-basic-focus-box-shadow: 0px 0px 0px 2px #8cd4fd;
+  --button-secondary-basic-active-background-color: rgba(189, 0, 255, 0.12);
+  --button-secondary-basic-disabled-color: var(--grey-30);
+  --button-secondary-flat-background-color: var(--grey-20);
+  --button-secondary-flat-color: var(--grey-80);
+  --button-secondary-flat-hover-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
+    var(--grey-20);
+  --button-secondary-flat-focus-background-color: var(--grey-20);
+  --button-secondary-flat-box-shadow: 0px 0px 0px 2px #8cd4fd;
+  --button-secondary-flat-active-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    var(--grey-20);
+  --button-secondary-flat-disabled-background-color: var(--grey-20);
+  --button-secondary-flat-disabled-color: var(--grey-30);
+  --icon-button-padding: 1px;
+  --icon-button-large-padding: 5px;
+  --icon-button-xlarge-padding: 8px;
+  --icon-button: 14px;
+  --icon-button-large-size: 24px;
+  --icon-button-xlarge-size: 32px;
+  --icon-button-rounded-border-radius: 50%;
+
+  --checkbox-icon-color: var(--grey-0);
+  --checkbox-background-color: var(--grey-0);
+  --checkbox-border-color: var(--grey-50);
+  --checkbox-checked-background-color: var(--purple-60);
+  --checkbox-checked-border-color: var(--purple-60);
+  --checkbox-hover-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #ffffff;
+  --checkbox-hover-border-color: var(--grey-50);
+  --checkbox-hover-checked-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
+    var(--purple-60);
+  --checkbox-hover-checked-border-color: var(--purple-50);
+  --checkbox-active-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #ffffff;
+  --checkbox-active-border-color: var(--grey-50);
+  --checkbox-active-checked-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    var(--purple-60);
+  --checkbox-active-checked-border-color: var(--purple-50);
+  --checkbox-focus-box-shadow: 0px 0px 0px 2px #8cd4fd;
+  --checkbox-focus-background-color: var(--grey-0);
+  --checkbox-focus-border-color: var(--grey-50);
+  --checkbox-focus-checked-background-color: var(--purple-60);
+  --checkbox-focus-checked-border-color: var(--purple-60);
+  --checkbox-disabled-background-color: var(--grey-0);
+  --checkbox-disabled-border-color: var(--grey-30);
+  --checkbox-disabled-checked-background-color: var(--grey-0);
+  --checkbox-disabled-checked-border-color: var(--grey-30);
+  --checkbox-disabled-icon-color: var(--grey-30);
+  --checkbox-error-background-color: var(--grey-0);
+  --checkbox-error-border-color: var(--red-60);
+  --checkbox-error-checked-background-color: var(--grey-0);
+  --checkbox-error-checked-border-color: var(--red-60);
+  --checkbox-error-icon-color: var(--red-60);
+
+  --input-color: var(--grey-100);
+  --input-background: var(--grey-5);
+  --input-shadow: inset 0px 0px 0px 1px var(--grey-20);
+  --input-hover-background: var(--white);
+  --input-hover-shadow: inset 0px 0px 0px 1px var(--grey-30);
+  --input-focus-background: var(--white);
+  --input-focus-shadow: 0px 0px 0px 2px var(--light-blue), inset 0px 0px 0px 1px var(--grey-80);
+  --input-error-color: var(--red-60);
+  --input-error-shadow: inset 0px 0px 0px 1px var(--red-60);
+  --input-placeholder-color: var(--grey-60);
+  --input-disabled-color: var(--grey-30);
+  --input-disabled-placeholder-color: var(--grey-30);
+  --input-disabled-background: var(--grey-20);
+  --input-disabled-shadow: inset 0px 0px 0px 1px var(--grey-30);
+  --input-border-color: var(--grey-40);
+  --input-hover-border-color: var(--white);
+  --input-focus-color: var(--white);
+
+  --list-item-default-color: var(--black);
+  --list-item-background-color: var(--white);
+  --list-item-border-color: var(--white);
+  --list-item-hover-border-color: var(--purple-20);
+  --list-item-selected-border-color: var(--purple-60);
+  --list-item-selected-color: var(--purple-60);
+
+  --dropdown-color: var(--text-100);
+  --dropdown-gap: 13px;
+  --dropdown-height: 32px;
+  --dropdown-font-size: 16px;
+  --dropdown-line-height: 24px;
+  --dropdown-small-height: 27px;
+  --dropdown-small-font-size: 14px;
+  --dropdown-small-line-height: 19px;
+  --dropdown-large-height: 50px;
+  --dropdown-large-font-size: 36px;
+  --dropdown-large-line-height: 40px;
+  --dropdown-padding-bottom: 8px;
+  --dropdown-border-color: var(--grey-30);
+  --dropdown-hover-border-color: var(--purple-60);
+
+  --progress-bar-padding: 4px 8px;
+  --progress-bar-selected-background-color: var(--grey-10);
+  --progress-bar-selected-border-color: var(--purple-50);
+  --progress-bar-label-color: var(--text-10);
+  --progress-bar-icon-color: var(--red-60);
+  --progress-bar-background: linear-gradient(
+    270deg,
+    var(--purple-75) 0%,
+    var(--purple-20) 100%,
+    var(--purple-20) 100%,
+    var(--purple-20) 100%
+  );
+  --progress-bar-value-color: var(--text-10);
+  --progress-bar-ignored-opacity: 0.3;
+
+  --filter-dropdown-width: 300px;
+  --filter-dropdown-header-background-color: var(--white);
+  --filter-dropdown-header-text: var(--text-50);
+  --filter-dropdown-options-background-color: var(--grey-5);
+
+  --toggle-padding: 2px;
+  --toggle-background-color: var(--grey-6);
+  --toggle-height: 40px;
+  --toggle-button-inactive-background: var(--grey-7);
+  --toggle-button-inactive-color: var(--grey-60);
+  --toggle-button-active-background: var(--white);
+  --toggle-button-active-color: var(--text-100);
+  --toggle-button-gap: 6px;
+  --toggle-button-height: 36px;
+  --toggle-button-padding: 6px 16px;
+  --toggle-button-width: auto;
+  --toggle-button-inactive-font-weight: 400;
+  --toggle-button-active-font-weight: 500;
+
+  --info-tooltip-width: 230px;
+  --info-tooltip-icon-width: 16px;
+  --info-tooltip-padding: 18px 16px;
+
+  --radio-button-background-color: var(--white);
+  --radio-button-border-color: var(--grey-50);
+  --radio-button-circle-outer-color: var(--purple-60);
+  --radio-button-circle-inner-color: var(--white);
+  --radio-button-hover-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #ffffff;
+  --radio-button-active-background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #ffffff;
+  --radio-button-checked-border-color: var(--purple-60);
+  --radio-button-checked-hover-border-color: var(--purple-50);
+  --radio-button-error-border-color: var(--red-60);
+  --radio-button-error-circle-outer-color: var(--white);
+  --radio-button-error-circle-inner-color: var(--red-60);
+  --radio-button-error-color: var(--red-60);
+  --radio-button-disabled-border-color: var(--grey-30);
+  --radio-button-disabled-circle-outer-color: var(--white);
+  --radio-button-disabled-circle-inner-color: var(--grey-30);
+
+  --tab-width: 219px;
+  --tab-padding: 14px;
+  --tab-color: var(--text-50);
+  --tab-active-color: var(--text-100);
+  --tab-active-font-wight: 500;
+  --tab-hover-color: var(--text-100);
+  --tab-border-color: var(--white);
+
+  --tab-active-border-color: var(--text-100);
+}
