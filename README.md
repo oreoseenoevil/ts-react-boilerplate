@@ -18,7 +18,6 @@ git clone https://github.com/oreoseenoevil/ts-react-boilerplate.git
 
 ```bash
 npm install
-npm run prepare (husky git hooks setup)
 ```
 
 ## Usage
